@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Perfect Cruise, My Love</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>For My Dearest, Planning Our Dream Journey</h1>
+        <p>I want every moment of our cruise to be as perfect as you. Please share your wishes with me.</p>
+        <form id="preferencesForm">
+            <label for="comfortZones">What would make you feel comfortable, my love?</label>
+            <textarea id="comfortZones" name="comfortZones" placeholder="Tell me anything that brings you peace..."></textarea>
+
+            <label for="foodAllergies">Are there any foods I should avoid for you?</label>
+            <input type="text" id="foodAllergies" name="foodAllergies" placeholder="E.g., peanuts, gluten, etc.">
+
+            <label for="companion">Would you like to bring a friend along?</label>
+            <select id="companion" name="companion">
+                <option value="justUs">Just us, please ❤️</option>
+                <option value="bringFriend">Yes, let's bring a friend</option>
+            </select>
+
+            <label for="destination">Choose the places you’d love to visit in Japan:</label>
+            <select id="destination" name="destination" multiple>
+                <option value="tokyo">Tokyo</option>
+                <option value="kyoto">Kyoto</option>
+                <option value="osaka">Osaka</option>
+                <option value="hokkaido">Hokkaido</option>
+                <option value="okinawa">Okinawa</option>
+            </select>
+
+            <label for="dressColor">What color would you like to wear, beautiful?</label>
+            <input type="color" id="dressColor" name="dressColor">
+
+            <label for="dessert">Choose a dessert you adore:</label>
+            <select id="dessert" name="dessert">
+                <option value="chocolateCake">Chocolate Cake</option>
+                <option value="iceCream">Ice Cream</option>
+                <option value="tiramisu">Tiramisu</option>
+                <option value="macarons">Macarons</option>
+                <option value="cheesecake">Cheesecake</option>
+            </select>
+
+            <button type="button" onclick="submitPreferences()">Submit Your Wishes ❤️</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

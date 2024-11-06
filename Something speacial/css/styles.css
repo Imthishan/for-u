@@ -1,0 +1,104 @@
+body {
+    font-family: 'Georgia', serif;
+    background-image: url('/images/pink-heart-big-bang-studio.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(255, 182, 193, 0.9); 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px; 
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+
+h1 {
+    font-size: 1.8em;
+    color: #fff8f2;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #fff8f2;
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1em;
+    color: #fff8f2;
+}
+
+
+textarea, input[type="text"], select, input[type="color"], button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ffebf0;
+    background-color: #fff8f2;
+}
+
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%; 
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    p {
+        font-size: 1em; 
+    }
+
+    textarea, input[type="text"], select, input[type="color"], button {
+        font-size: 14px; 
+    }
+
+    button {
+        padding: 10px; 
+    }
+}
